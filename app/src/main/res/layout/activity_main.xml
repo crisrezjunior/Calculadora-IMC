@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/background_menu">
+
+
+    <EditText
+        android:digits="1234567890.,"
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:hint="Peso"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+
+        />
+
+    <EditText
+        android:digits="1234567890.,"
+        android:id="@+id/altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peso"
+        android:layout_margin="20dp"
+        android:hint="Altura"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/altura"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Calcular"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:backgroundTint="@color/background_menu"
+        />
+
+    <TextView
+        android:id="@+id/resposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_calcular"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+
+/>
+</RelativeLayout>
+
