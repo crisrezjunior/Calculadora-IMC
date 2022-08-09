@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,10 +16,11 @@
         android:layout_centerVertical="true"
         android:layout_margin="30dp"
         android:hint="Peso"
+        android:autofillHints="Peso"
         android:textSize="25sp"
         android:inputType="numberDecimal"
 
-        />
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:digits="1234567890.,"
@@ -32,7 +32,8 @@
         android:hint="Altura"
         android:textSize="25sp"
         android:inputType="numberDecimal"
-        />
+        android:autofillHints="Altura"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/btn_calcular"
@@ -46,7 +47,7 @@
         android:textAllCaps="false"
         android:textSize="30sp"
         android:backgroundTint="@color/background_menu"
-        />
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/resposta"
